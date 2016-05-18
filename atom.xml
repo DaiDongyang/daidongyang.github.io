@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://daidongyang.github.io/"/>
-  <updated>2016-05-18T06:21:04.000Z</updated>
+  <updated>2016-05-18T06:29:53.000Z</updated>
   <id>http://daidongyang.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://daidongyang.github.io/2016/05/18/latex/"/>
     <id>http://daidongyang.github.io/2016/05/18/latex/</id>
     <published>2016-05-18T06:08:36.000Z</published>
-    <updated>2016-05-18T06:21:04.000Z</updated>
+    <updated>2016-05-18T06:29:53.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;LaTeX&quot;&gt;&lt;a href=&quot;#LaTeX&quot; class=&quot;headerlink&quot; title=&quot;LaTeX&quot;&gt;&lt;/a&gt;LaTeX&lt;/h1&gt;&lt;h2 id=&quot;Environment&quot;&gt;&lt;a href=&quot;#Environment&quot; class=&quot;headerlink&quot; title=&quot;Environment&quot;&gt;&lt;/a&gt;Environment&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;mac上推荐使用MacTex&lt;/li&gt;
@@ -28,10 +28,10 @@
 &lt;li&gt;为保证中文正常显示，把默认compiler设置为xelatex,文件编码保证为UTF8。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;latex/build.png&quot; alt=&quot;builder&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;latex/utf8.png&quot; alt=&quot;utf ecoding&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;build.png&quot; alt=&quot;builder&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;utf8.png&quot; alt=&quot;utf ecoding&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;A-Simple-Diary-Example&quot;&gt;&lt;a href=&quot;#A-Simple-Diary-Example&quot; class=&quot;headerlink&quot; title=&quot;A Simple Diary Example&quot;&gt;&lt;/a&gt;A Simple Diary Example&lt;/h2&gt;&lt;h4 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code&quot;&gt;&lt;/a&gt;code&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;\documentclass[utf8]&amp;#123;ctexart&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage&amp;#123;indentfirst&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\setlength&amp;#123;\parskip&amp;#125;&amp;#123;1em&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\title&amp;#123;\textbf&amp;#123;My Diary&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\date&amp;#123;\textbf&amp;#123;Apr. 2016&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\author&amp;#123;\textbf&amp;#123;代东洋&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin&amp;#123;document&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	\maketitle&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	\tableofcontents&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	\section&amp;#123;30th Apr. 2008 &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	\noindent \emph&amp;#123;Saturday\hspace&amp;#123;\fill&amp;#125; Sunny&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	今天是四月的最后一天。	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end&amp;#123;document&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;result&quot;&gt;&lt;a href=&quot;#result&quot; class=&quot;headerlink&quot; title=&quot;result&quot;&gt;&lt;/a&gt;result&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;latex/simplediary.png&quot; alt=&quot;simplediary.png&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;result&quot;&gt;&lt;a href=&quot;#result&quot; class=&quot;headerlink&quot; title=&quot;result&quot;&gt;&lt;/a&gt;result&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;simplediary.png&quot; alt=&quot;simplediary.png&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
