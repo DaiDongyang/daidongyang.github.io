@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://daidongyang.github.io/"/>
-  <updated>2016-05-18T07:18:06.000Z</updated>
+  <updated>2016-05-18T07:27:49.000Z</updated>
   <id>http://daidongyang.github.io/</id>
   
   <author>
@@ -20,30 +20,60 @@
     <link href="http://daidongyang.github.io/2016/05/18/git-note/"/>
     <id>http://daidongyang.github.io/2016/05/18/git-note/</id>
     <published>2016-05-18T07:15:35.000Z</published>
-    <updated>2016-05-18T07:18:06.000Z</updated>
+    <updated>2016-05-18T07:27:49.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Ignore-Some-Files&quot;&gt;&lt;a href=&quot;#Ignore-Some-Files&quot; class=&quot;headerlink&quot; title=&quot;Ignore Some Files&quot;&gt;&lt;/a&gt;Ignore Some Files&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim .gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git rm -r --cached .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;ignore some files&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Merge&quot;&gt;&lt;a href=&quot;#Merge&quot; class=&quot;headerlink&quot; title=&quot;Merge&quot;&gt;&lt;/a&gt;Merge&lt;/h2&gt;&lt;p&gt;###If you are in dev branch.&lt;/p&gt;
-&lt;ul&gt;
+&lt;h2 id=&quot;Merge&quot;&gt;&lt;a href=&quot;#Merge&quot; class=&quot;headerlink&quot; title=&quot;Merge&quot;&gt;&lt;/a&gt;Merge&lt;/h2&gt;&lt;h3 id=&quot;If-you-are-in-dev-branch&quot;&gt;&lt;a href=&quot;#If-you-are-in-dev-branch&quot; class=&quot;headerlink&quot; title=&quot;If you are in dev branch.&quot;&gt;&lt;/a&gt;If you are in dev branch.&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;merge local master&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;merge master```&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+ ```git pull origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;li&gt;git merge master&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;this command will merge dev with origin/master automatically! &lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git pull origin master&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this command will merge dev with origin/master automatically! &lt;/li&gt;
 &lt;li&gt;So it is very importanct to look out which branch your are in when pulling!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;push origin master```&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;    + this command will perform not like pull, it won&amp;apos;t push local dev to origin/master. Insteadly, it will push local master to origin/master even if you are on dev branch now.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## git remote&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+ 很多时候， git clone 比 git remote add 方便&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	 + 以下为其使用的示例&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git clone git clone https://github.com/DaiDongyang/jfinal.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;li&gt;&lt;p&gt;git push origin master&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this command will perform not like pull, it won’t push local dev to origin/master. Insteadly, it will push local master to origin/master even if you are on dev branch now.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;gitclone.png&quot; alt=&quot;a&quot;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;删除远程分支&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;remote rm origin```&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+ 有时候碰到冲突时非常烦，一怒之下会强行push。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;h2 id=&quot;git-remote&quot;&gt;&lt;a href=&quot;#git-remote&quot; class=&quot;headerlink&quot; title=&quot;git remote&quot;&gt;&lt;/a&gt;git remote&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;很多时候， git clone 比 git remote add 方便&lt;ul&gt;
+&lt;li&gt;以下为其使用的示例&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;git push -f &lt;remote&gt; &lt;branch&gt;&lt;br&gt;git push –force &lt;remote&gt; &lt;branch&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## git reset&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+ 以下说明及代码来自[这里](http://lingxiankong.github.io/blog/2014/07/18/git-notes/),有些我并没有验证。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	+ git reset [–hard|soft|mixed|merge|keep] [commit或HEAD]，根据–soft –mixed –hard，会对working directory、index、HEAD进行重置。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	+ A). –hard：除了“Untracked files”，其他变更都被重置。即：重设index和working directory，自从commit以来在working directory和index中的任何改变都被丢弃，并把HEAD指向commit。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	+ B). –soft：这个模式的效果是，执行完毕后，自从commit以来的所有改变都会显示在git status的”Changes to be committed”中，当然，还有“Untracked files”。即：恢复commit以来的index和working directory内容。即：not commited &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	+ C). –mixed：这个模式是默认模式。这个模式的效果是，自从commit以来的修改都会被保留，但会被标记成”Changes not staged for commit”。即：仅重置index，文件修改被转移到working directory中。即：not added&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	+ git reset HEAD file…会将git index中file内容删除，重新放回working directory中，即未被add的状态。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	+ 一个示例：假如你想要丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/branch&gt;&lt;/remote&gt;&lt;/branch&gt;&lt;/remote&gt;&lt;/p&gt;
-&lt;p&gt;git fetch origin&lt;br&gt;git reset –hard origin/master&lt;br&gt;```&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/DaiDongyang/jfinal.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/my_resource/git/gitclone.png&quot; alt=&quot;gitclone&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除远程分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git remote rm origin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;有时候碰到冲突时非常烦，一怒之下会强行push。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push -f &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git push --force &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;git-reset&quot;&gt;&lt;a href=&quot;#git-reset&quot; class=&quot;headerlink&quot; title=&quot;git reset&quot;&gt;&lt;/a&gt;git reset&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;以下说明及代码来自&lt;a href=&quot;http://lingxiankong.github.io/blog/2014/07/18/git-notes/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;,有些我并没有验证。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git reset [–hard|soft|mixed|merge|keep] [commit或HEAD]，根据–soft –mixed –hard，会对working directory、index、HEAD进行重置。&lt;/li&gt;
+&lt;li&gt;A). –hard：除了“Untracked files”，其他变更都被重置。即：重设index和working directory，自从commit以来在working directory和index中的任何改变都被丢弃，并把HEAD指向commit。&lt;/li&gt;
+&lt;li&gt;B). –soft：这个模式的效果是，执行完毕后，自从commit以来的所有改变都会显示在git status的”Changes to be committed”中，当然，还有“Untracked files”。即：恢复commit以来的index和working directory内容。即：not commited &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;C). –mixed：这个模式是默认模式。这个模式的效果是，自从commit以来的修改都会被保留，但会被标记成”Changes not staged for commit”。即：仅重置index，文件修改被转移到working directory中。即：not added&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git reset HEAD file…会将git index中file内容删除，重新放回working directory中，即未被add的状态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一个示例：假如你想要丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git fetch origin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset –hard origin/master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;git-commit&quot;&gt;&lt;a href=&quot;#git-commit&quot; class=&quot;headerlink&quot; title=&quot;git commit&quot;&gt;&lt;/a&gt;git commit&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;有时候想改上一次commit的内容(我经常会遇到这种问题）,用&lt;code&gt;git commit --amend&lt;/code&gt;， 然后可以用vim等编辑器修改上次commit内容。参考于&lt;a href=&quot;https://segmentfault.com/q/1010000000761908&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

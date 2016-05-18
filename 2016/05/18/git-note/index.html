@@ -92,12 +92,12 @@
 <meta property="og:url" content="http://daidongyang.github.io/2016/05/18/git-note/index.html">
 <meta property="og:site_name" content="Runnable">
 <meta property="og:description" content="Ignore Some Files1234vim .gitignoregit rm -r --cached .git add .git commit -m &amp;quot;ignore some files&amp;quot;">
-<meta property="og:image" content="http://daidongyang.github.io/gitclone.png">
-<meta property="og:updated_time" content="2016-05-18T07:18:06.000Z">
+<meta property="og:image" content="http://daidongyang.github.io/my_resource/git/gitclone.png">
+<meta property="og:updated_time" content="2016-05-18T07:27:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-note">
 <meta name="twitter:description" content="Ignore Some Files1234vim .gitignoregit rm -r --cached .git add .git commit -m &amp;quot;ignore some files&amp;quot;">
-<meta name="twitter:image" content="http://daidongyang.github.io/gitclone.png">
+<meta name="twitter:image" content="http://daidongyang.github.io/my_resource/git/gitclone.png">
 
 
 
@@ -304,26 +304,56 @@
       
         <h2 id="Ignore-Some-Files"><a href="#Ignore-Some-Files" class="headerlink" title="Ignore Some Files"></a>Ignore Some Files</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim .gitignore</span><br><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;ignore some files&quot;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h2 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h2><p>###If you are in dev branch.</p>
-<ul>
+<h2 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h2><h3 id="If-you-are-in-dev-branch"><a href="#If-you-are-in-dev-branch" class="headerlink" title="If you are in dev branch."></a>If you are in dev branch.</h3><ul>
 <li><p>merge local master</p>
 <ul>
-<li><figure class="highlight plain"><figcaption><span>merge master```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ ```git pull origin master</span><br></pre></td></tr></table></figure>
+<li>git merge master</li>
+</ul>
 </li>
-<li><p>this command will merge dev with origin/master automatically! </p>
-</li>
+<li><p>git pull origin master</p>
+<ul>
+<li>this command will merge dev with origin/master automatically! </li>
 <li>So it is very importanct to look out which branch your are in when pulling!</li>
 </ul>
 </li>
-<li><figure class="highlight plain"><figcaption><span>push origin master```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    + this command will perform not like pull, it won&apos;t push local dev to origin/master. Insteadly, it will push local master to origin/master even if you are on dev branch now.</span><br><span class="line"></span><br><span class="line">## git remote</span><br><span class="line">+ 很多时候， git clone 比 git remote add 方便</span><br><span class="line">	 + 以下为其使用的示例</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">git clone git clone https://github.com/DaiDongyang/jfinal.git</span><br></pre></td></tr></table></figure>
+<li><p>git push origin master</p>
+<ul>
+<li>this command will perform not like pull, it won’t push local dev to origin/master. Insteadly, it will push local master to origin/master even if you are on dev branch now.</li>
+</ul>
 </li>
 </ul>
-<p><img src="gitclone.png" alt="a"></p>
-<ul>
-<li>删除远程分支<figure class="highlight plain"><figcaption><span>remote rm origin```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 有时候碰到冲突时非常烦，一怒之下会强行push。</span><br></pre></td></tr></table></figure></li>
+<h2 id="git-remote"><a href="#git-remote" class="headerlink" title="git remote"></a>git remote</h2><ul>
+<li>很多时候， git clone 比 git remote add 方便<ul>
+<li>以下为其使用的示例</li>
 </ul>
-<p>git push -f <remote> <branch><br>git push –force <remote> <branch><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## git reset</span><br><span class="line">+ 以下说明及代码来自[这里](http://lingxiankong.github.io/blog/2014/07/18/git-notes/),有些我并没有验证。</span><br><span class="line"></span><br><span class="line">	+ git reset [–hard|soft|mixed|merge|keep] [commit或HEAD]，根据–soft –mixed –hard，会对working directory、index、HEAD进行重置。</span><br><span class="line">	+ A). –hard：除了“Untracked files”，其他变更都被重置。即：重设index和working directory，自从commit以来在working directory和index中的任何改变都被丢弃，并把HEAD指向commit。</span><br><span class="line">	+ B). –soft：这个模式的效果是，执行完毕后，自从commit以来的所有改变都会显示在git status的”Changes to be committed”中，当然，还有“Untracked files”。即：恢复commit以来的index和working directory内容。即：not commited </span><br><span class="line">	+ C). –mixed：这个模式是默认模式。这个模式的效果是，自从commit以来的修改都会被保留，但会被标记成”Changes not staged for commit”。即：仅重置index，文件修改被转移到working directory中。即：not added</span><br><span class="line"></span><br><span class="line">	+ git reset HEAD file…会将git index中file内容删除，重新放回working directory中，即未被add的状态。</span><br><span class="line"></span><br><span class="line">	+ 一个示例：假如你想要丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它。</span><br></pre></td></tr></table></figure></branch></remote></branch></remote></p>
-<p>git fetch origin<br>git reset –hard origin/master<br>```</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git <span class="built_in">clone</span> https://github.com/DaiDongyang/jfinal.git</span><br></pre></td></tr></table></figure>
+<p><img src="/my_resource/git/gitclone.png" alt="gitclone"></p>
+<ul>
+<li>删除远程分支</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br></pre></td></tr></table></figure>
+<ul>
+<li>有时候碰到冲突时非常烦，一怒之下会强行push。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -f &lt;remote&gt; &lt;branch&gt;</span><br><span class="line">git push --force &lt;remote&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><ul>
+<li><p>以下说明及代码来自<a href="http://lingxiankong.github.io/blog/2014/07/18/git-notes/" target="_blank" rel="external">这里</a>,有些我并没有验证。</p>
+<ul>
+<li>git reset [–hard|soft|mixed|merge|keep] [commit或HEAD]，根据–soft –mixed –hard，会对working directory、index、HEAD进行重置。</li>
+<li>A). –hard：除了“Untracked files”，其他变更都被重置。即：重设index和working directory，自从commit以来在working directory和index中的任何改变都被丢弃，并把HEAD指向commit。</li>
+<li>B). –soft：这个模式的效果是，执行完毕后，自从commit以来的所有改变都会显示在git status的”Changes to be committed”中，当然，还有“Untracked files”。即：恢复commit以来的index和working directory内容。即：not commited </li>
+<li><p>C). –mixed：这个模式是默认模式。这个模式的效果是，自从commit以来的修改都会被保留，但会被标记成”Changes not staged for commit”。即：仅重置index，文件修改被转移到working directory中。即：not added</p>
+</li>
+<li><p>git reset HEAD file…会将git index中file内容删除，重新放回working directory中，即未被add的状态。</p>
+</li>
+<li><p>一个示例：假如你想要丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它。</p>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git fetch origin</span><br><span class="line">git reset –hard origin/master</span><br></pre></td></tr></table></figure>
 <h2 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h2><ul>
 <li>有时候想改上一次commit的内容(我经常会遇到这种问题）,用<code>git commit --amend</code>， 然后可以用vim等编辑器修改上次commit内容。参考于<a href="https://segmentfault.com/q/1010000000761908" target="_blank" rel="external">这里</a></li>
 </ul>
@@ -481,7 +511,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ignore-Some-Files"><span class="nav-number">1.</span> <span class="nav-text">Ignore Some Files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Merge"><span class="nav-number">2.</span> <span class="nav-text">Merge</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">3.</span> <span class="nav-text">git commit</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ignore-Some-Files"><span class="nav-number">1.</span> <span class="nav-text">Ignore Some Files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Merge"><span class="nav-number">2.</span> <span class="nav-text">Merge</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#If-you-are-in-dev-branch"><span class="nav-number">2.1.</span> <span class="nav-text">If you are in dev branch.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-remote"><span class="nav-number">3.</span> <span class="nav-text">git remote</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">4.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">5.</span> <span class="nav-text">git commit</span></a></li></ol></div>
             
           </div>
         </section>
