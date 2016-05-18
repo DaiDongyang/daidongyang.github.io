@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://daidongyang.github.io/"/>
-  <updated>2016-05-18T07:27:49.000Z</updated>
+  <updated>2016-05-18T07:31:44.000Z</updated>
   <id>http://daidongyang.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://daidongyang.github.io/2016/05/18/git-note/"/>
     <id>http://daidongyang.github.io/2016/05/18/git-note/</id>
     <published>2016-05-18T07:15:35.000Z</published>
-    <updated>2016-05-18T07:27:49.000Z</updated>
+    <updated>2016-05-18T07:31:44.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Ignore-Some-Files&quot;&gt;&lt;a href=&quot;#Ignore-Some-Files&quot; class=&quot;headerlink&quot; title=&quot;Ignore Some Files&quot;&gt;&lt;/a&gt;Ignore Some Files&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim .gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git rm -r --cached .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;ignore some files&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -75,7 +75,7 @@
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git fetch origin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset –hard origin/master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;git-commit&quot;&gt;&lt;a href=&quot;#git-commit&quot; class=&quot;headerlink&quot; title=&quot;git commit&quot;&gt;&lt;/a&gt;git commit&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;有时候想改上一次commit的内容(我经常会遇到这种问题）,用&lt;code&gt;git commit --amend&lt;/code&gt;， 然后可以用vim等编辑器修改上次commit内容。参考于&lt;a href=&quot;https://segmentfault.com/q/1010000000761908&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;有时候想改上一次commit的内容(我经常会遇到这种问题）,用 git commit –amend， 然后可以用vim等编辑器修改上次commit内容。参考于&lt;a href=&quot;https://segmentfault.com/q/1010000000761908&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
