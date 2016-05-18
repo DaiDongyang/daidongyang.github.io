@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="markdown," />
 
 
 
@@ -86,15 +86,53 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Runnable">
-<meta property="og:url" content="http://daidongyang.github.io/index.html">
+<meta name="description" content="如下
+图片
+
+12345![a](gitclone.png)![GitHub Octocat][2]&amp;apos;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png&amp;apos;//引号不带
+
+链接
+
+1[google](https://www.google.com)
+
+表格
+
+123| head1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown">
+<meta property="og:url" content="http://daidongyang.github.io/2016/05/18/markdown/index.html">
 <meta property="og:site_name" content="Runnable">
-<meta property="og:description">
+<meta property="og:description" content="如下
+图片
+
+12345![a](gitclone.png)![GitHub Octocat][2]&amp;apos;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png&amp;apos;//引号不带
+
+链接
+
+1[google](https://www.google.com)
+
+表格
+
+123| head1">
+<meta property="og:image" content="http://daidongyang.github.io/./jianzhu.jpg">
+<meta property="og:image" content="http://xiaoshujiang.com/favicon.ico">
+<meta property="og:image" content="http://daidongyang.github.io/./jianzhu.jpg">
+<meta property="og:updated_time" content="2016-05-18T07:15:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Runnable">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Markdown">
+<meta name="twitter:description" content="如下
+图片
+
+12345![a](gitclone.png)![GitHub Octocat][2]&amp;apos;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png&amp;apos;//引号不带
+
+链接
+
+1[google](https://www.google.com)
+
+表格
+
+123| head1">
+<meta name="twitter:image" content="http://daidongyang.github.io/./jianzhu.jpg">
 
 
 
@@ -112,7 +150,7 @@
   };
 </script>
 
-  <title> Runnable </title>
+  <title> Markdown | Runnable </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -133,9 +171,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -232,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -254,134 +290,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/18/git-note/" itemprop="url">
-                  git-note
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-18T15:15:35+08:00" content="2016-05-18">
-              2016-05-18
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/18/git-note/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/git-note/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Ignore-Some-Files"><a href="#Ignore-Some-Files" class="headerlink" title="Ignore Some Files"></a>Ignore Some Files</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim .gitignore</span><br><span class="line">git rm -r --cached .</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;ignore some files&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h2><p>###If you are in dev branch.</p>
-<ul>
-<li><p>merge local master</p>
-<ul>
-<li><figure class="highlight plain"><figcaption><span>merge master```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ ```git pull origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>this command will merge dev with origin/master automatically! </p>
-</li>
-<li>So it is very importanct to look out which branch your are in when pulling!</li>
-</ul>
-</li>
-<li><figure class="highlight plain"><figcaption><span>push origin master```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    + this command will perform not like pull, it won&apos;t push local dev to origin/master. Insteadly, it will push local master to origin/master even if you are on dev branch now.</span><br><span class="line"></span><br><span class="line">## git remote</span><br><span class="line">+ 很多时候， git clone 比 git remote add 方便</span><br><span class="line">	 + 以下为其使用的示例</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">git clone git clone https://github.com/DaiDongyang/jfinal.git</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><img src="gitclone.png" alt="a"></p>
-<ul>
-<li>删除远程分支<figure class="highlight plain"><figcaption><span>remote rm origin```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 有时候碰到冲突时非常烦，一怒之下会强行push。</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>git push -f <remote> <branch><br>git push –force <remote> <branch><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## git reset</span><br><span class="line">+ 以下说明及代码来自[这里](http://lingxiankong.github.io/blog/2014/07/18/git-notes/),有些我并没有验证。</span><br><span class="line"></span><br><span class="line">	+ git reset [–hard|soft|mixed|merge|keep] [commit或HEAD]，根据–soft –mixed –hard，会对working directory、index、HEAD进行重置。</span><br><span class="line">	+ A). –hard：除了“Untracked files”，其他变更都被重置。即：重设index和working directory，自从commit以来在working directory和index中的任何改变都被丢弃，并把HEAD指向commit。</span><br><span class="line">	+ B). –soft：这个模式的效果是，执行完毕后，自从commit以来的所有改变都会显示在git status的”Changes to be committed”中，当然，还有“Untracked files”。即：恢复commit以来的index和working directory内容。即：not commited </span><br><span class="line">	+ C). –mixed：这个模式是默认模式。这个模式的效果是，自从commit以来的修改都会被保留，但会被标记成”Changes not staged for commit”。即：仅重置index，文件修改被转移到working directory中。即：not added</span><br><span class="line"></span><br><span class="line">	+ git reset HEAD file…会将git index中file内容删除，重新放回working directory中，即未被add的状态。</span><br><span class="line"></span><br><span class="line">	+ 一个示例：假如你想要丢弃你所有的本地改动与提交，可以到服务器上获取最新的版本并将你本地主分支指向到它。</span><br></pre></td></tr></table></figure></branch></remote></branch></remote></p>
-<p>git fetch origin<br>git reset –hard origin/master<br>```</p>
-<h2 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h2><ul>
-<li>有时候想改上一次commit的内容(我经常会遇到这种问题）,用<code>git commit --amend</code>， 然后可以用vim等编辑器修改上次commit内容。参考于<a href="https://segmentfault.com/q/1010000000761908" target="_blank" rel="external">这里</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/18/markdown/" itemprop="url">
-                  Markdown
-                </a>
+                Markdown
               
             
           </h1>
@@ -428,9 +337,7 @@
       
 
       
-        
-          
-            <h2 id="如下"><a href="#如下" class="headerlink" title="如下"></a>如下</h2><ul>
+        <h2 id="如下"><a href="#如下" class="headerlink" title="如下"></a>如下</h2><ul>
 <li>图片</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">![a](gitclone.png)</span><br><span class="line"></span><br><span class="line">![GitHub Octocat][2]</span><br><span class="line"></span><br><span class="line">&apos;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png&apos;//引号不带</span><br></pre></td></tr></table></figure>
@@ -626,352 +533,62 @@
 <h3 id="增强型表格-1"><a href="#增强型表格-1" class="headerlink" title="增强型表格"></a>增强型表格</h3><p>|First Header  | Second Header ||<br>|First Header  | Second Header | Third Header|<br>|————- | ————-|————-|<br>表身1Content Cell  | Merge Content Cell||<br>Content Cell  | Content Cell| Content Cell|</p>
 <p>表身2Content Cell  | Merge Content Cell||<br>Content Cell  | Content Cell| Content Cell|<br>[表格标题]</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/18/latex/" itemprop="url">
-                  latex
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-18T14:08:36+08:00" content="2016-05-18">
-              2016-05-18
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/18/latex/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/latex/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/markdown/" rel="tag">#markdown</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h1><h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ul>
-<li>mac上推荐使用MacTex</li>
-<li>编辑器个人更喜欢TexStudio</li>
-<li>为保证中文正常显示，把默认compiler设置为xelatex,文件编码保证为UTF8。</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/18/latex/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/18/latex/" rel="next" title="latex">
+                <i class="fa fa-chevron-left"></i> latex
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
+              <a href="/2016/05/18/git-note/" rel="prev" title="git-note">
+                git-note <i class="fa fa-chevron-right"></i>
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/05/18/java-basis/" itemprop="url">
-                  java-basis
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-18T12:18:37+08:00" content="2016-05-18">
-              2016-05-18
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/18/java-basis/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/java-basis/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="Java-Biscs"><a href="#Java-Biscs" class="headerlink" title="Java Biscs"></a>Java Biscs</h1><h2 id="关于程序周期，当程序退出时执行某个方法"><a href="#关于程序周期，当程序退出时执行某个方法" class="headerlink" title="关于程序周期，当程序退出时执行某个方法"></a>关于程序周期，当程序退出时执行某个方法</h2><ul>
-<li>有时候想要在程序退出时执行某些特定的操作，比如说关闭网络连接。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Runtime.getRuntime().addShutdownHook(<span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            System.out.println(<span class="string">"In shutdown hook"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;, <span class="string">"Shutdown-thread"</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/18/java-basis/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/18/singleton-java/" itemprop="url">
-                  singleton_java
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-18T12:00:57+08:00" content="2016-05-18">
-              2016-05-18
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/18/singleton-java/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/singleton-java/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Singleton"><a href="#Singleton" class="headerlink" title="Singleton"></a>Singleton</h1><h2 id="Java-线程安全单例的实现"><a href="#Java-线程安全单例的实现" class="headerlink" title="Java 线程安全单例的实现"></a>Java 线程安全单例的实现</h2><h3 id="Simplest"><a href="#Simplest" class="headerlink" title="Simplest"></a>Simplest</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">EagerSingleton</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> EagerSingleton singObj = <span class="keyword">new</span> EagerSingleton(); </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">EagerSingleton</span><span class="params">()</span></span>&#123; </span><br><span class="line">    &#125; </span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> EagerSingleton <span class="title">getSingleInstance</span><span class="params">()</span></span>&#123; </span><br><span class="line">       <span class="keyword">return</span> singObj;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/18/singleton-java/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -979,6 +596,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/18/markdown/"
+           data-title="Markdown" data-url="http://daidongyang.github.io/2016/05/18/markdown/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -998,8 +623,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -1049,6 +683,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如下"><span class="nav-number">1.</span> <span class="nav-text">如下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#grammar-tableExtra-true"><span class="nav-number">2.</span> <span class="nav-text">grammar_tableExtra: true</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用语法"><span class="nav-number"></span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">2.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表"><span class="nav-number">2.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表"><span class="nav-number">2.2.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表起始编号"><span class="nav-number">2.3.</span> <span class="nav-text">有序列表起始编号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接"><span class="nav-number">3.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">4.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文字格式"><span class="nav-number">5.</span> <span class="nav-text">文字格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">6.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#水平线"><span class="nav-number">7.</span> <span class="nav-text">水平线</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GFM扩展语法"><span class="nav-number"></span> <span class="nav-text">GFM扩展语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#表格"><span class="nav-number">1.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增强型表格"><span class="nav-number">2.</span> <span class="nav-text">增强型表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#行内代码"><span class="nav-number">3.1.</span> <span class="nav-text">行内代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码"><span class="nav-number">3.2.</span> <span class="nav-text">块代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动转换成超链接"><span class="nav-number">4.</span> <span class="nav-text">自动转换成超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">5.</span> <span class="nav-text">HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除线"><span class="nav-number">6.</span> <span class="nav-text">删除线</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#扩展语法"><span class="nav-number"></span> <span class="nav-text">扩展语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展的文字格式"><span class="nav-number">2.</span> <span class="nav-text">扩展的文字格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#印刷字替换"><span class="nav-number">3.</span> <span class="nav-text">印刷字替换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缩写定义"><span class="nav-number">4.</span> <span class="nav-text">缩写定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#待办事项"><span class="nav-number">5.</span> <span class="nav-text">待办事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脚注"><span class="nav-number">6.</span> <span class="nav-text">脚注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">7.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公式"><span class="nav-number">8.</span> <span class="nav-text">公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#行内公式"><span class="nav-number">8.1.</span> <span class="nav-text">行内公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块公式"><span class="nav-number">8.2.</span> <span class="nav-text">块公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程图-语法"><span class="nav-number">8.3.</span> <span class="nav-text">流程图 (语法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#序列图-语法"><span class="nav-number">8.4.</span> <span class="nav-text">序列图 (语法)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小书匠编辑器扩展语法"><span class="nav-number"></span> <span class="nav-text">小书匠编辑器扩展语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#块代码内文字格式"><span class="nav-number">1.</span> <span class="nav-text">块代码内文字格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码高亮标记"><span class="nav-number">1.1.</span> <span class="nav-text">块代码高亮标记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码删除线"><span class="nav-number">1.2.</span> <span class="nav-text">块代码删除线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码加粗"><span class="nav-number">1.3.</span> <span class="nav-text">块代码加粗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码下横线"><span class="nav-number">1.4.</span> <span class="nav-text">块代码下横线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频"><span class="nav-number">2.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音频"><span class="nav-number">3.</span> <span class="nav-text">音频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附件"><span class="nav-number">4.</span> <span class="nav-text">附件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元数据"><span class="nav-number">5.</span> <span class="nav-text">元数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mermaid流程图，序列图，甘特图（mermaid语法）"><span class="nav-number">6.</span> <span class="nav-text">mermaid流程图，序列图，甘特图（mermaid语法）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#统计图-（统计图语法）"><span class="nav-number">7.</span> <span class="nav-text">统计图 （统计图语法）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义class"><span class="nav-number">8.</span> <span class="nav-text">自定义class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cjk强调"><span class="nav-number">9.</span> <span class="nav-text">cjk强调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cjk注音标示"><span class="nav-number">10.</span> <span class="nav-text">cjk注音标示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#居中显示文字"><span class="nav-number">11.</span> <span class="nav-text">居中显示文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对齐显示文字"><span class="nav-number">12.</span> <span class="nav-text">对齐显示文字</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#示例"><span class="nav-number"></span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#这是-H1-一s级标题"><span class="nav-number"></span> <span class="nav-text">这是 H1 一s级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#这是-H2-二级标题"><span class="nav-number">1.</span> <span class="nav-text">这是 H2 二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#这是-H3-三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">这是 H3 三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这是-H4-四级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">这是 H4 四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#这是-H5-五级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">这是 H5 五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#这是-H6-六级标题"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">这是 H6 六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频-1"><span class="nav-number">1.2.</span> <span class="nav-text">视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音频-1"><span class="nav-number">1.3.</span> <span class="nav-text">音频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附件-1"><span class="nav-number">1.4.</span> <span class="nav-text">附件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#待办事项-1"><span class="nav-number">1.5.</span> <span class="nav-text">待办事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缩写定义-1"><span class="nav-number">1.6.</span> <span class="nav-text">缩写定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#印刷字替换-1"><span class="nav-number">1.7.</span> <span class="nav-text">印刷字替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#html代码"><span class="nav-number">1.8.</span> <span class="nav-text">html代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程图-语法-1"><span class="nav-number">1.9.</span> <span class="nav-text">流程图 (语法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#序列图-语法-1"><span class="nav-number">1.10.</span> <span class="nav-text">序列图 (语法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚注-1x"><span class="nav-number">1.11.</span> <span class="nav-text">脚注^1x</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格Tables"><span class="nav-number">1.12.</span> <span class="nav-text">表格Tables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义-1"><span class="nav-number">1.13.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字格式-1"><span class="nav-number">1.14.</span> <span class="nav-text">文字格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表-1"><span class="nav-number">1.15.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表-1"><span class="nav-number">1.16.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序列表起始编号-1"><span class="nav-number">1.17.</span> <span class="nav-text">有序列表起始编号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片-1"><span class="nav-number">1.18.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用-1"><span class="nav-number">1.19.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#水平线-1"><span class="nav-number">1.20.</span> <span class="nav-text">水平线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码-1"><span class="nav-number">1.21.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#行内代码-1"><span class="nav-number">1.21.1.</span> <span class="nav-text">行内代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#块代码-1"><span class="nav-number">1.21.2.</span> <span class="nav-text">块代码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#块代码内文字格式-1"><span class="nav-number">2.</span> <span class="nav-text">块代码内文字格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码高亮标记-1"><span class="nav-number">2.1.</span> <span class="nav-text">块代码高亮标记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码删除线-1"><span class="nav-number">2.2.</span> <span class="nav-text">块代码删除线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码加粗-1"><span class="nav-number">2.3.</span> <span class="nav-text">块代码加粗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#块代码下横线-1"><span class="nav-number">2.4.</span> <span class="nav-text">块代码下横线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示行号"><span class="nav-number">2.5.</span> <span class="nav-text">显示行号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高亮指定行"><span class="nav-number">2.6.</span> <span class="nav-text">高亮指定行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示行号并从指定行数计数"><span class="nav-number">2.7.</span> <span class="nav-text">显示行号并从指定行数计数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#禁用显示行号"><span class="nav-number">2.8.</span> <span class="nav-text">禁用显示行号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公式-1"><span class="nav-number">2.9.</span> <span class="nav-text">公式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#行内公式-1"><span class="nav-number">2.9.1.</span> <span class="nav-text">行内公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#块公式-1"><span class="nav-number">2.9.2.</span> <span class="nav-text">块公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带编号的公式"><span class="nav-number">2.9.3.</span> <span class="nav-text">带编号的公式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#统计图"><span class="nav-number">2.10.</span> <span class="nav-text">统计图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mermaid流程图，序列图，甘特图"><span class="nav-number">2.11.</span> <span class="nav-text">mermaid流程图，序列图，甘特图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#流程图"><span class="nav-number">2.11.1.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#序列图"><span class="nav-number">2.11.2.</span> <span class="nav-text">序列图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#甘特图"><span class="nav-number">2.11.3.</span> <span class="nav-text">甘特图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PPT语法"><span class="nav-number">2.12.</span> <span class="nav-text">PPT语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emoji表情语法"><span class="nav-number">2.13.</span> <span class="nav-text">emoji表情语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义class-1"><span class="nav-number">2.14.</span> <span class="nav-text">自定义class</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义class用例-green"><span class="nav-number">2.14.1.</span> <span class="nav-text">自定义class用例{green}</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cjk强调-1"><span class="nav-number">2.15.</span> <span class="nav-text">cjk强调</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这里将显示中文衬线字体做为强调样式"><span class="nav-number">2.15.1.</span> <span class="nav-text">这里将显示中文衬线字体做为强调样式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cjk注音标示-1"><span class="nav-number">2.16.</span> <span class="nav-text">cjk注音标示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#居中显示"><span class="nav-number">2.17.</span> <span class="nav-text">居中显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字对齐"><span class="nav-number">2.18.</span> <span class="nav-text">文字对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增强型表格-1"><span class="nav-number">2.19.</span> <span class="nav-text">增强型表格</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -1145,6 +790,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
