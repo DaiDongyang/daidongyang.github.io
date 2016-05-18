@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://daidongyang.github.io/"/>
-  <updated>2016-05-18T07:16:27.000Z</updated>
+  <updated>2016-05-18T07:18:06.000Z</updated>
   <id>http://daidongyang.github.io/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://daidongyang.github.io/2016/05/18/git-note/"/>
     <id>http://daidongyang.github.io/2016/05/18/git-note/</id>
     <published>2016-05-18T07:15:35.000Z</published>
-    <updated>2016-05-18T07:16:27.000Z</updated>
+    <updated>2016-05-18T07:18:06.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Ignore-Some-Files&quot;&gt;&lt;a href=&quot;#Ignore-Some-Files&quot; class=&quot;headerlink&quot; title=&quot;Ignore Some Files&quot;&gt;&lt;/a&gt;Ignore Some Files&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim .gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git rm -r --cached .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;ignore some files&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;Merge&quot;&gt;&lt;a href=&quot;#Merge&quot; class=&quot;headerlink&quot; title=&quot;Merge&quot;&gt;&lt;/a&gt;Merge&lt;/h2&gt;&lt;p&gt;###If you are in dev branch.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;merge local master&lt;/p&gt;
@@ -50,7 +51,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Ignore-Some-Files&quot;&gt;&lt;a href=&quot;#Ignore-Some-Files&quot; class=&quot;headerlink&quot; title=&quot;Ignore Some Files&quot;&gt;&lt;/a&gt;Ignore Some Files&lt;/h2&gt;&lt;figure class
+      &lt;h2 id=&quot;Ignore-Some-Files&quot;&gt;&lt;a href=&quot;#Ignore-Some-Files&quot; class=&quot;headerlink&quot; title=&quot;Ignore Some Files&quot;&gt;&lt;/a&gt;Ignore Some Files&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim .gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git rm -r --cached .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;ignore some files&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -64,12 +65,13 @@
     <link href="http://daidongyang.github.io/2016/05/18/markdown/"/>
     <id>http://daidongyang.github.io/2016/05/18/markdown/</id>
     <published>2016-05-18T07:13:54.000Z</published>
-    <updated>2016-05-18T07:15:12.000Z</updated>
+    <updated>2016-05-18T07:18:32.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;如下&quot;&gt;&lt;a href=&quot;#如下&quot; class=&quot;headerlink&quot; title=&quot;如下&quot;&gt;&lt;/a&gt;如下&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;图片&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;![a](gitclone.png)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![GitHub Octocat][2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;apos;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png&amp;apos;//引号不带&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;链接&lt;/li&gt;
 &lt;/ul&gt;
@@ -268,7 +270,7 @@
       &lt;h2 id=&quot;如下&quot;&gt;&lt;a href=&quot;#如下&quot; class=&quot;headerlink&quot; title=&quot;如下&quot;&gt;&lt;/a&gt;如下&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;图片&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cla
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;![a](gitclone.png)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![GitHub Octocat][2]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;apos;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png&amp;apos;//引号不带&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
