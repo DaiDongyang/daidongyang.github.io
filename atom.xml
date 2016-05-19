@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://daidongyang.github.io/"/>
-  <updated>2016-05-19T16:16:49.000Z</updated>
+  <updated>2016-05-19T16:27:16.000Z</updated>
   <id>http://daidongyang.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://daidongyang.github.io/2016/05/18/git-note/"/>
     <id>http://daidongyang.github.io/2016/05/18/git-note/</id>
     <published>2016-05-18T07:15:35.000Z</published>
-    <updated>2016-05-19T16:16:49.000Z</updated>
+    <updated>2016-05-19T16:27:16.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Ignore-Some-Files&quot;&gt;&lt;a href=&quot;#Ignore-Some-Files&quot; class=&quot;headerlink&quot; title=&quot;Ignore Some Files&quot;&gt;&lt;/a&gt;Ignore Some Files&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim .gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git rm -r --cached .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add .&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;ignore some files&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -83,14 +83,13 @@
 &lt;li&gt;Create pull request in child-reposity(on github webpage).&lt;/li&gt;
 &lt;li&gt;Auto merge, or solve conflict and merge.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;###Solve conflict:&lt;/p&gt;
-&lt;ol&gt;
+&lt;h3 id=&quot;Solve-conflict&quot;&gt;&lt;a href=&quot;#Solve-conflict&quot; class=&quot;headerlink&quot; title=&quot;Solve conflict:&quot;&gt;&lt;/a&gt;Solve conflict:&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Create a new branch in parent-reposity, and pull from child-reposity to the new branch in parent-reposity&lt;/p&gt;
  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout -b child-master master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git pull https://github.com/DaiDongyang/TestPullRequest.git master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ol&gt;
-&lt;li&gt;The second command may be confused, the “master” means a branch in &lt;a href=&quot;https://github.com/DaiDongyang/TestPullRequest.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/DaiDongyang/TestPullRequest.git&lt;/a&gt;. According to git document, the usage of git pull is : git pull [options] [\&lt;repository&gt; [\&lt;refspec&gt;…​]]. git pull command does two things: git fetch and merge.&lt;/refspec&gt;&lt;/repository&gt;&lt;/li&gt;
+&lt;li&gt;The second command may be confused, the “master” means a branch in &lt;a href=&quot;https://github.com/DaiDongyang/TestPullRequest.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/DaiDongyang/TestPullRequest.git&lt;/a&gt;. According to git document, the usage of git pull is : git pull [options] [&amp;lt;repository&amp;gt; [&amp;lt;refspec&amp;gt;…​]]. git pull command does two things: git fetch and merge.&lt;/li&gt;
 &lt;li&gt;Solve conflict&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Merge and commit in parent-reposity.&lt;/p&gt;
  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git merge --no-ff DaiDongyang-master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git push origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;

@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Runnable">
 <meta property="og:description" content="Ignore Some Files1234vim .gitignoregit rm -r --cached .git add .git commit -m &amp;quot;ignore some files&amp;quot;">
 <meta property="og:image" content="http://daidongyang.github.io/my_resource/git/gitclone.png">
-<meta property="og:updated_time" content="2016-05-19T16:16:49.000Z">
+<meta property="og:updated_time" content="2016-05-19T16:27:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git-note">
 <meta name="twitter:description" content="Ignore Some Files1234vim .gitignoregit rm -r --cached .git add .git commit -m &amp;quot;ignore some files&amp;quot;">
@@ -363,14 +363,13 @@
 <li>Create pull request in child-reposity(on github webpage).</li>
 <li>Auto merge, or solve conflict and merge.</li>
 </ol>
-<p>###Solve conflict:</p>
-<ol>
+<h3 id="Solve-conflict"><a href="#Solve-conflict" class="headerlink" title="Solve conflict:"></a>Solve conflict:</h3><ol>
 <li><p>Create a new branch in parent-reposity, and pull from child-reposity to the new branch in parent-reposity</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b child-master master</span><br><span class="line">git pull https://github.com/DaiDongyang/TestPullRequest.git master</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol>
-<li>The second command may be confused, the “master” means a branch in <a href="https://github.com/DaiDongyang/TestPullRequest.git" target="_blank" rel="external">https://github.com/DaiDongyang/TestPullRequest.git</a>. According to git document, the usage of git pull is : git pull [options] [\<repository> [\<refspec>…​]]. git pull command does two things: git fetch and merge.</refspec></repository></li>
+<li>The second command may be confused, the “master” means a branch in <a href="https://github.com/DaiDongyang/TestPullRequest.git" target="_blank" rel="external">https://github.com/DaiDongyang/TestPullRequest.git</a>. According to git document, the usage of git pull is : git pull [options] [&lt;repository&gt; [&lt;refspec&gt;…​]]. git pull command does two things: git fetch and merge.</li>
 <li>Solve conflict</li>
 <li><p>Merge and commit in parent-reposity.</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge --no-ff DaiDongyang-master</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li>
@@ -475,7 +474,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/avastar.jpg"
                alt="Dai Dongyang" />
           <p class="site-author-name" itemprop="name">Dai Dongyang</p>
           <p class="site-description motion-element" itemprop="description"></p>
@@ -529,7 +528,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ignore-Some-Files"><span class="nav-number">1.</span> <span class="nav-text">Ignore Some Files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Merge"><span class="nav-number">2.</span> <span class="nav-text">Merge</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#If-you-are-in-dev-branch"><span class="nav-number">2.1.</span> <span class="nav-text">If you are in dev branch.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-remote"><span class="nav-number">3.</span> <span class="nav-text">git remote</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">4.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">5.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-pull-request"><span class="nav-number">6.</span> <span class="nav-text">GitHub pull request</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ignore-Some-Files"><span class="nav-number">1.</span> <span class="nav-text">Ignore Some Files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Merge"><span class="nav-number">2.</span> <span class="nav-text">Merge</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#If-you-are-in-dev-branch"><span class="nav-number">2.1.</span> <span class="nav-text">If you are in dev branch.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-remote"><span class="nav-number">3.</span> <span class="nav-text">git remote</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-reset"><span class="nav-number">4.</span> <span class="nav-text">git reset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-commit"><span class="nav-number">5.</span> <span class="nav-text">git commit</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-pull-request"><span class="nav-number">6.</span> <span class="nav-text">GitHub pull request</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Solve-conflict"><span class="nav-number">6.1.</span> <span class="nav-text">Solve conflict:</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
