@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://daidongyang.github.io/"/>
-  <updated>2016-08-15T13:13:23.000Z</updated>
+  <updated>2016-11-24T14:22:26.000Z</updated>
   <id>http://daidongyang.github.io/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>polipo</title>
+    <link href="http://daidongyang.github.io/2016/11/24/polipo/"/>
+    <id>http://daidongyang.github.io/2016/11/24/polipo/</id>
+    <published>2016-11-24T14:10:30.000Z</published>
+    <updated>2016-11-24T14:22:26.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;通过-polipo使终端翻墙&quot;&gt;&lt;a href=&quot;#通过-polipo使终端翻墙&quot; class=&quot;headerlink&quot; title=&quot;通过 polipo使终端翻墙&quot;&gt;&lt;/a&gt;通过 polipo使终端翻墙&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$polipo&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#在一个terminal(iterm)窗口输入这个指令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#在另一个terminal里输入以下指令，即可通过代理翻墙。前提是shadowsocks要先打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$export&lt;/span&gt; http_proxy=&lt;span class=&quot;string&quot;&gt;&quot;http://127.0.0.1:48313&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$export&lt;/span&gt; https_proxy=&lt;span class=&quot;string&quot;&gt;&quot;https://127.0.0.1:48313&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;通过-polipo使终端翻墙&quot;&gt;&lt;a href=&quot;#通过-polipo使终端翻墙&quot; class=&quot;headerlink&quot; title=&quot;通过 polipo使终端翻墙&quot;&gt;&lt;/a&gt;通过 polipo使终端翻墙&lt;/h2&gt;&lt;figure class=&quot;highlight 
+    
+    </summary>
+    
+    
+      <category term="GFW" scheme="http://daidongyang.github.io/tags/GFW/"/>
+    
+  </entry>
   
   <entry>
     <title>cpp-note</title>
@@ -544,30 +565,9 @@
     </summary>
     
     
-      <category term="design pattern" scheme="http://daidongyang.github.io/tags/design-pattern/"/>
-    
       <category term="Java" scheme="http://daidongyang.github.io/tags/Java/"/>
     
-  </entry>
-  
-  <entry>
-    <title>singleton_java</title>
-    <link href="http://daidongyang.github.io/2016/05/18/polipo/"/>
-    <id>http://daidongyang.github.io/2016/05/18/polipo/</id>
-    <published>2016-05-18T04:00:57.000Z</published>
-    <updated>2016-11-24T14:19:01.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;Polipo&quot;&gt;&lt;a href=&quot;#Polipo&quot; class=&quot;headerlink&quot; title=&quot;Polipo&quot;&gt;&lt;/a&gt;Polipo&lt;/h1&gt;&lt;h2 id=&quot;通过-polipo使终端翻墙&quot;&gt;&lt;a href=&quot;#通过-polipo使终端翻墙&quot; class=&quot;headerlink&quot; title=&quot;通过 polipo使终端翻墙&quot;&gt;&lt;/a&gt;通过 polipo使终端翻墙&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$polipo&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#在一个terminal(iterm)窗口输入这个指令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#在另一个terminal里输入以下指令，即可通过代理翻墙。前提是shadowsocks要先打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$export&lt;/span&gt; http_proxy=&lt;span class=&quot;string&quot;&gt;&quot;http://127.0.0.1:48313&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$export&lt;/span&gt; https_proxy=&lt;span class=&quot;string&quot;&gt;&quot;https://127.0.0.1:48313&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Polipo&quot;&gt;&lt;a href=&quot;#Polipo&quot; class=&quot;headerlink&quot; title=&quot;Polipo&quot;&gt;&lt;/a&gt;Polipo&lt;/h1&gt;&lt;h2 id=&quot;通过-polipo使终端翻墙&quot;&gt;&lt;a href=&quot;#通过-polipo使终端翻墙&quot; class=&quot;
-    
-    </summary>
-    
-    
-      <category term="GFW" scheme="http://daidongyang.github.io/tags/GFW/"/>
+      <category term="design pattern" scheme="http://daidongyang.github.io/tags/design-pattern/"/>
     
   </entry>
   
